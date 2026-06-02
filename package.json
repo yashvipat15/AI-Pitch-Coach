@@ -1,0 +1,21 @@
+{
+  "name": "ai-pitch-coach",
+  "version": "1.0.0",
+  "description": "AI-powered pitch scoring engine using Claude",
+  "type": "module",
+  "main": "scoring.js",
+  "exports": {
+    ".": "./scoring.js"
+  },
+  "scripts": {
+    "test": "node scoring.js",
+    "score": "node scoring.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.100.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
