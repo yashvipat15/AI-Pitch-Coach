@@ -39,7 +39,7 @@ function loadEnv(envPath = join(__dirname, '.env')) {
 loadEnv();
 
 // ── Constants ──────────────────────────────────────────────────────────────
-const MODEL = 'claude-sonnet-4-20250514';
+const MODEL = 'claude-sonnet-4-6';
 
 const SYSTEM_PROMPT =
   'You are a battle-hardened VC who has seen 10,000 pitches. ' +
