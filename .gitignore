@@ -1,4 +1,15 @@
-node_modules/
+node_modules
+dist
+dist-ssr
+*.local
+.vite
+
 .env
-*.log
+.env.*
+!.env.example
+
 .DS_Store
+*.log
+.idea
+.vscode
+.claude/

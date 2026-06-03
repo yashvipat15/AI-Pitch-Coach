@@ -1,0 +1,86 @@
+.scorecard {
+  background: var(--surface-1);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--r-lg);
+  padding: var(--sp-4);
+  box-shadow: var(--shadow-1);
+}
+
+.scorecard__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-3);
+}
+
+.scorecard__head h2 {
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+
+.scorecard__generated {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-3);
+}
+
+.scorecard__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.scorecard__row {
+  padding: var(--sp-3);
+  border-radius: var(--r-md);
+  background: var(--surface-2);
+  border: 1px solid var(--border-soft);
+}
+
+.scorecard__row-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--sp-2);
+}
+
+.scorecard__row-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.scorecard__row-score {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-feature-settings: 'tnum';
+}
+
+.scorecard__bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: var(--sp-2);
+}
+
+.scorecard__bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--brand-grad);
+  border-radius: inherit;
+  transition: width 360ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.scorecard__row-rationale {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.scorecard__row--high .scorecard__row-score { color: var(--good); }
+.scorecard__row--mid  .scorecard__row-score { color: var(--warn); }
+.scorecard__row--low  .scorecard__row-score { color: var(--bad);  }
+
+.scorecard__row--high .scorecard__bar-fill { background: linear-gradient(90deg, var(--good), #22c55e); }
+.scorecard__row--mid  .scorecard__bar-fill { background: linear-gradient(90deg, var(--warn), #f59e0b); }
+.scorecard__row--low  .scorecard__bar-fill { background: linear-gradient(90deg, var(--bad),  #ef4444); }

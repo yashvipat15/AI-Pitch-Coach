@@ -1,0 +1,29 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--border-soft);
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+.status-badge__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ink-3);
+}
+
+.status-badge--idle        .status-badge__dot { background: var(--ink-3); }
+.status-badge--recording   .status-badge__dot {
+  background: var(--bad);
+  animation: dot-pulse 1.1s ease-in-out infinite;
+}
+.status-badge--transcribing .status-badge__dot { background: var(--warn); }
+.status-badge--scoring      .status-badge__dot { background: var(--brand-1); }
+.status-badge--complete     .status-badge__dot { background: var(--good); }
+.status-badge--error        { color: var(--bad); border-color: var(--bad); }
+.status-badge--error        .status-badge__dot { background: var(--bad); }
