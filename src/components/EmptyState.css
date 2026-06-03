@@ -1,0 +1,45 @@
+.empty-state {
+  background: var(--surface-1);
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--r-lg);
+  padding: var(--sp-6) var(--sp-5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-3);
+  flex: 1;
+  min-height: 420px;
+  justify-content: center;
+}
+
+.empty-state__art {
+  filter: drop-shadow(0 8px 18px rgba(110, 168, 254, 0.18));
+}
+
+.empty-state__title {
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.empty-state__body {
+  color: var(--ink-2);
+  font-size: 14px;
+  max-width: 38ch;
+  line-height: 1.55;
+}
+
+.empty-state__btn {
+  margin-top: var(--sp-2);
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--brand-1);
+  background: rgba(110, 168, 254, 0.10);
+  color: var(--brand-1);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.empty-state__btn:hover {
+  background: rgba(110, 168, 254, 0.18);
+}
