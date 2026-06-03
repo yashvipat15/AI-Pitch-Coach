@@ -1,21 +1,37 @@
 {
   "name": "ai-pitch-coach",
-  "version": "1.0.0",
-  "description": "AI-powered pitch scoring engine using Claude",
+  "private": true,
+  "version": "0.1.0",
   "type": "module",
-  "main": "scoring.js",
-  "exports": {
-    ".": "./scoring.js"
-  },
+  "description": "AI Pitch Coach — Person 3: UI, Charts & Demo",
   "scripts": {
-    "test": "node scoring.js",
-    "score": "node scoring.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.100.0"
+    "chart.js": "^4.4.6",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.3.1"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "license": "MIT"
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react-swc": "^3.7.1",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "jsdom": "^25.0.1",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
+  }
 }
